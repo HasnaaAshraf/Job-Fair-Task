@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styling.css">
+
+</head>
+<body>
+    
+<main>
+  <header class=" text-center mt-5 mb-4 fw-bolder">
+    <h1 class=" mt-3 fw-bolder">Application For Customer Transactions</h1>
+  </header>
+  
+  <section id="tableContainer">
+    <div class="container " >
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Filter</button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="cusName dropdown-item" href="#">Customer Name</a></li>
+          <li><a class="cusAmount dropdown-item" href="#">Customer amount</a></li> 
+        </ul>
+      </div>
+            <table class="table mt-3 ">
+                <thead>
+                  <tr>
+                    <th scope="col">Transaction ID</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Transaction amount</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <tbody class="Tbody">
+                 </tbody>
+              </table>      
+    </div>
+  </section>
+    
+  <section  id="graphContainer">
+    <div class="container chart mt-4 mb-5">
+      <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </section>
+</main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+
+</body>
+</html>
